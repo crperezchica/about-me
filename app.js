@@ -14,8 +14,6 @@ if (rainbows === 'yes' || rainbows === 'y' ){
 }
 else if (rainbows === 'no' || rainbows === 'n')
     alert('Sorry ' + username + ' Carmen does like rainbows');
- 
-
 
 //Question 2: prompt('Is my hair color blue?') = false
 const haircolor = prompt('Is my haircolor blue?').toLowerCase();
@@ -35,19 +33,23 @@ if (travel === 'yes' || travel === 'y'){
 } else if (travel === 'no' || travel === 'n')
     alert('Who does not like to travel.');
 
-//Questions 4: prompt('Do I have children?') = 
-const children = prompt(username + ', do you think I have children?');
+//Questions 4: prompt('Do I have children?') = True
+const children = prompt(username + ', do you think I have children?').toLowerCase();
 console.log('user said response to children was:' + children);
 if (children === 'yes' || children === 'y'){
     alert('Yes. I have two beautiful supergirls/princesses. It depends on the day you ask.');
 } else if (children === 'no' || children === 'n')
     alert('Actually, I do have two amazing little supergirls/princesses.');
 
-// //Question 5: prompt('Am I a unicorn') = no need to answer
-const unicorn = prompt(username + ', am I a unicorn?');
+//Question 5: prompt('Am I a unicorn') = no need to answer
+const unicorn = prompt(username + ', am I a unicorn?').toLowerCase();
 console.log('user response to unicorn question was:' + unicorn);
 if (unicorn === 'yes' || unicorn === 'y'){
     alert('Oh ' + username + ', of course I am not a unicorn.');
 } else if ('Nope. Not a unicorn today.');
+
+//Question 6: of How many siblings do I have? will require prompt, for loop and alert
+
+
 
 alert(username + ', Thank you for playing! Have a nice day.');
