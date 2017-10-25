@@ -1,15 +1,15 @@
-'use strict'
+'use strict';
 
 alert('Welcome! Get ready to play a game to learn more About Me.');
 
 const username = prompt('But first what\s your name?');
 console.log('user said their name was:' + username);
-alert('Hi! ' + username + '. Get ready to start playing. Have fun!')
+alert('Hi! ' + username + '. Get ready to start playing. Have fun!');
 
 //Question 1: prompt('Do I like rainbows?')= true
 const rainbows = prompt( username + ', do I like rainbows?').toLowerCase();
 console.log('user said response to rainbows:' + rainbows);
-if (rainbows === 'yes'|| rainbows === 'y' ){
+if (rainbows === 'yes' || rainbows === 'y' ){
     alert('Nicely done! I do like rainbows.');
 }
 else if (rainbows === 'no' || rainbows === 'n')
@@ -17,13 +17,13 @@ else if (rainbows === 'no' || rainbows === 'n')
  
 
 
-//Question 2: prompt('Is her natural hair color blue?');
-// const haircolor=prompt('Is Carmen\s haircolor blue?');
-// console.log('user said response to haircolor:' + haircolor);
-// if (haircolor.toLowerCase () === 'yes' || haircolor.toLowerCase () === 'y'){
-//     alert('Sorry ' + username + ' Carmen\s haircolor is not blue right now');
-// } else if (haircolor.toLowerCase () === 'no' || haircolor.toLowerCase () === 'n')
-//     alert('Correct ' + username + '. Carmen\s hair is not blue');
+//Question 2: prompt('Is my hair color blue?') = false
+const haircolor = prompt('Is my haircolor blue?').toLowerCase();
+console.log('user said response to haircolor:' + haircolor);
+if (haircolor === 'yes' || haircolor === 'y'){
+    alert('Sorry ' + username + ', my haircolor is not blue. At least not now :-)');
+} else if (haircolor === 'no' || haircolor () === 'n')
+    alert('Correct. ' + username + ', my haircolor is not blue');
 
 
 //Questions 3: prompt('Does she like flowers?')
