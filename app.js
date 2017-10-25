@@ -19,36 +19,35 @@ else if (rainbows === 'no' || rainbows === 'n')
 
 //Question 2: prompt('Is my hair color blue?') = false
 const haircolor = prompt('Is my haircolor blue?').toLowerCase();
-console.log('user said response to haircolor:' + haircolor);
+console.log('user said response to haircolor was:' + haircolor);
 if (haircolor === 'yes' || haircolor === 'y'){
-    alert('Sorry ' + username + ', my haircolor is not blue. At least not now :-)');
-} else if (haircolor === 'no' || haircolor () === 'n')
-    alert('Correct. ' + username + ', my haircolor is not blue');
+    alert(username + ', my haircolor is not blue today.');
+} else if (haircolor === 'no' || haircolor === 'n')
+    alert(username + ', you are right. My haircolor is not blue');
 
 
-//Questions 3: prompt('Does she like flowers?')
+//Questions 3: prompt('Do I like to travel?') = true
 
-// const flowers=prompt('Does Carmen like flowers?');
-// console.log('user said response to flowers was:' + flowers);
-// if (flowers.toLowerCase () === 'yes' || flowers.toLowerCase () === 'y'){
-//     alert('You got it! ' + username + ' Carmen does like flowers');
-// } else if (flowers.toLowerCase () === 'no' || flowers.toLowerCase () === 'n')
-//     alert(username + ' Who does not like flowers');
+const travel = prompt(username + ', here goes another question. Do I like to travel?').toLowerCase();
+console.log('user said response to travels was:' + travel);
+if (travel === 'yes' || travel === 'y'){
+    alert('You are right. I enjoy traveling.');
+} else if (travel === 'no' || travel === 'n')
+    alert('Who does not like to travel.');
 
-//Questions 4: prompt('Does she own a white car?')
-// const whiteCar=prompt('Does Carmen own a white car?');
-// console.log('user said response to color of car:' + whiteCar);
-// if (whiteCar.toLowerCase () === 'yes' || whiteCar.toLowerCase () === 'y'){
-//     alert('That\s right ' + username + ' Carmen does own a white car');
-// } else if (whiteCar.toLowerCase () === 'no' || whiteCar.toLowerCase () === 'n')
-//     alert('Sorry' + username + ' Carmen does drive a white car');
+//Questions 4: prompt('Do I have children?') = 
+const children = prompt(username + ', do you think I have children?');
+console.log('user said response to children was:' + children);
+if (children === 'yes' || children === 'y'){
+    alert('Yes. I have two beautiful supergirls/princesses. It depends on the day you ask.');
+} else if (children === 'no' || children === 'n')
+    alert('Actually, I do have two amazing little supergirls/princesses.');
 
-// //Question 5: prompt('Is she a unicorn?')
-// const unicorn=prompt('Is Carmen a unicorn?');
-// console.log('user response to unicorn question was:' + unicorn);
-// if (unicorn.toLowerCase () === 'yes' || unicorn.toLowerCase () === 'y'){
-//     alert('Oh ' + username + ' of course she is not a unicorn');
-// } else if (unicorn.toLowerCase () === 'no' || unicorn.toLowerCase () === 'n')
-//     alert(username + ' You are correct, she is not a unicorn');
+// //Question 5: prompt('Am I a unicorn') = no need to answer
+const unicorn = prompt(username + ', am I a unicorn?');
+console.log('user response to unicorn question was:' + unicorn);
+if (unicorn === 'yes' || unicorn === 'y'){
+    alert('Oh ' + username + ', of course I am not a unicorn.');
+} else if ('Nope. Not a unicorn today.');
 
-//     alert(username + ' Thank you for playing! Have a nice day.')
+alert(username + ', Thank you for playing! Have a nice day.');
