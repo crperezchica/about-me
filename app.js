@@ -57,53 +57,69 @@ function runTravel() {
 };
 
 // // //Questions 4: prompt('Do I have children?') = True
-// const children = prompt(username + ', do you think I have children?').toLowerCase();
-// console.log('user said response to children was:' + children);
-// if (children === 'yes' || children === 'y'){
-//     alert('Yes. I have two beautiful supergirls/princesses.');
-//     score = score + 1;
-//     console.log('user score to question 4 was:' + score);
-// } else if (children === 'no' || children === 'n')
-//     alert('Actually, I do have two amazing little supergirls/princesses.');
+
+runChildren();
+
+function runChildren() {
+    const children = prompt(username + ', do you think I have children?').toLowerCase();
+    console.log('user said response to children was:' + children);
+    if (children === 'yes' || children === 'y'){
+        alert('Yes. I have two beautiful supergirls/princesses.');
+        score = score + 1;
+        console.log('user score to question 4 was:' + score);
+    } else if (children === 'no' || children === 'n')
+        alert('Actually, I do have two amazing little supergirls/princesses.');
+};
 
 // // //Question 5: prompt('Am I a unicorn') = no need to answer
-// const unicorn = prompt(username + ', am I a unicorn?').toLowerCase();
-// console.log('user response to unicorn question was:' + unicorn);
-// if (unicorn === 'yes' || unicorn === 'y'){
-//     alert('Oh ' + username + ', of course I am not a unicorn.');
-// } else if ('Nope. Not a unicorn today.');
-// score = score + 1;
-// console.log('user score to question 6 was:' + score);
+
+runUnicorn();
+
+function runUnicorn() {
+    const unicorn = prompt(username + ', am I a unicorn?').toLowerCase();
+    console.log('user response to unicorn question was:' + unicorn);
+    if (unicorn === 'yes' || unicorn === 'y'){
+        alert('Oh ' + username + ', of course I am not a unicorn.');
+    } else if ('Nope. Not a unicorn today.');
+    score = score + 1;
+    console.log('user score to question 6 was:' + score);
+};
 
 // //Question 6: of How many siblings do I have? will require prompt, for loop and alert
-// let siblings;
 
-// //let siblings = prompt (username + ', how many sibling(s) do I have?');
-// for ( let i = 0; i < 4; i++){
-//     if ( i === 0 ) {
-//         siblings = prompt (username + ', how many sibling(s) do I have?');
-//     }
-//     else {
-//         if (siblings < 1 ){
-//             siblings = prompt('Sorry, too low. Try again.');
-//             if (i === 3){
-//                 alert('Thank you for trying. But, I only have one sibling.');
-//             }
-               
-//         } else if (siblings === 1) {
-//             alert (username + ', you are correct. I only have one sibling.');
-//             score = score + 1;
-//             console.log('score up to question 6 was:' + score);
-//             i = 4;
-//         }
-//         else if (siblings > 1){
-//             siblings = prompt('Sorry, too high. Try again.');
-//             if (i === 3){
-//                 alert('Thank you for trying. But, I only have one sibling.');
-//             }
-//         }
-//     }
-// }
+
+let siblings;
+runSiblings();
+
+function runSiblings() {
+
+//let siblings = prompt (username + ', how many sibling(s) do I have?');
+    for ( let i = 0; i < 4; i++){
+        if ( i === 0 ) {
+            siblings = parseInt( prompt (username + ', how many sibling(s) do I have?') );
+        }
+        else {
+            if (siblings < 1 ){
+                siblings = prompt('Sorry, too low. Try again.');
+                if (i === 3){
+                    alert('Thank you for trying. But, I only have one sibling.');
+                }
+                
+            } else if (siblings === 1) {
+                alert (username + ', you are correct. I only have one sibling.');
+                score = score + 1;
+                console.log('score up to question 6 was:' + score);
+                i = 4;
+            }
+            else if (siblings > 1){
+                siblings = prompt('Sorry, too high. Try again.');
+                if (i === 3){
+                    alert('Thank you for trying. But, I only have one sibling.');
+                }
+            }
+        }
+    }
+};
 
 // // //Question 7: Can you guess a state I have visited
 // const visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland', 'Kansas'];
