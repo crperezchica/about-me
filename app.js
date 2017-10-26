@@ -101,6 +101,7 @@ for (let i = 0; i < 6; i++){
         if (state.toLowerCase() === visitedstates[x].toLowerCase()){
             alert('Good guess!  I have visited ' + visitedstates[x]);
             x = visitedstates.length + 1;
+            score = score + 1;
         }
         else if(x == visitedstates.length - 1)
         {
