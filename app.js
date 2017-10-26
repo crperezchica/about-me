@@ -29,26 +29,32 @@ function runRainbow() {
 };
 
 // // //Question 2: prompt('Is my hair color blue?') = false
-// const haircolor = prompt('Is my haircolor blue?').toLowerCase();
-// console.log('user said response to haircolor was:' + haircolor);
-// if (haircolor === 'yes' || haircolor === 'y'){
-//     alert(username + ', my haircolor is not blue today.');
-// } else if (haircolor === 'no' || haircolor === 'n')
-//     alert(username + ', you are right. My haircolor is not blue');
-// score = score + 1;
-// console.log('user score to question 2 was:' + score);
+runHaircolor();
 
-
+function runHaircolor() {
+    const haircolor = prompt('Is my haircolor blue?').toLowerCase();
+    console.log('user said response to haircolor was:' + haircolor);
+    if (haircolor === 'yes' || haircolor === 'y'){
+        alert(username + ', my haircolor is not blue today.');
+    } else if (haircolor === 'no' || haircolor === 'n')
+        alert(username + ', you are right. My haircolor is not blue');
+    score = score + 1;
+    console.log('user score to question 2 was:' + score);
+};
 // // //Questions 3: prompt('Do I like to travel?') = true
 
-// const travel = prompt(username + ', here goes another question. Do I like to travel?').toLowerCase();
-// console.log('user said response to travels was:' + travel);
-// if (travel === 'yes' || travel === 'y'){
-//     alert('You are right. I enjoy traveling.');
-//     score = score + 1;
-//     console.log('user score to question 3 was:' + score); 
-// } else if (travel === 'no' || travel === 'n')
-//     alert('Who does not like to travel.');
+runTravel();
+
+function runTravel() {
+    const travel = prompt(username + ', here goes another question. Do I like to travel?').toLowerCase();
+    console.log('user said response to travels was:' + travel);
+    if (travel === 'yes' || travel === 'y'){
+        alert('You are right. I enjoy traveling.');
+        score = score + 1;
+        console.log('user score to question 3 was:' + score); 
+    } else if (travel === 'no' || travel === 'n')
+        alert('Who does not like to travel.');
+};
 
 // // //Questions 4: prompt('Do I have children?') = True
 // const children = prompt(username + ', do you think I have children?').toLowerCase();
