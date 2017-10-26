@@ -56,7 +56,7 @@ function runTravel() {
         alert('Who does not like to travel.');
 };
 
-// // //Questions 4: prompt('Do I have children?') = True
+// Questions 4: prompt('Do I have children?') = True
 
 runChildren();
 
@@ -119,31 +119,32 @@ function runSiblings() {
             }
         }
     }
-};
+// };
 
 // // //Question 7: Can you guess a state I have visited
-// const visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland', 'Kansas'];
-// let state;
 
-// for (let i = 0; i < 6; i++){
-//     state = prompt(username + ', can you guess what states I have visited?' ).toLowerCase();
-//     console.log('what mentioned was:' + visitedstates);
-//     for (let x = 0; x < visitedstates.length; x++){
-//         if (state.toLowerCase() === visitedstates[x].toLowerCase()){
-//             alert('Good guess!  I have visited ' + visitedstates[x]);
-//             x = visitedstates.length + 1;
-//             score = score + 1;
-//         }
-//         else if(x == visitedstates.length - 1)
-//         {
-//             alert('I have not visited ' + state + ' try again');
-//         }
-//     }
-// }
+runStates();
 
+function runStates() {
+    for (let i = 0; i < 6; i++){
+        const visitedstates = ['washington', 'california', 'florida', 'ohio', 'north carolina'];        
+        const state = prompt(username + ', can you guess what states I have visited?'  ).toLowerCase();
+        console.log('what mentioned was:' + state);
+        console.log(visitedstates.indexOf(state));
+        if (visitedstates.indexOf(state) >= 0){
+            alert('Good guess!  I have visited ' + state);
+            // x = visitedstates.length + 1;
+            score = score + 1;
+            break;
+        }
+        else { 
+            alert('I have not visited ' + state + ' try again');
+        }
+    }
+};
 
-// console.log('keeping score' + score);
+console.log('keeping score' + score);
 
-// alert(username + ', Thank you for playing! You scored ' + score + '. But the score does not matter, what matters is that you learned more about me.');
+alert(username + ', Thank you for playing! You scored ' + score + '. But the score does not matter, what matters is that you learned more about me.');
 
-// // 
+// 
