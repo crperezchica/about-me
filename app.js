@@ -1,8 +1,8 @@
 'use strict';
 
-let score = 0
+let score = 0;
 
-alert('Welcome! Get ready to play a game to learn more About Me.');
+alert('Welcome! Get ready to answer seven question to learn more about me.');
 
 const username = prompt('But first what\s your name?');
 console.log('user said their name was:' + username);
@@ -13,6 +13,8 @@ const rainbows = prompt( username + ', do I like rainbows?').toLowerCase();
 console.log('user said response to rainbows:' + rainbows);
 if (rainbows === 'yes' || rainbows === 'y' ){
     alert('Nicely done! I do like rainbows.');
+    score = score + 1;
+console.log('user score to question 1 was:' + score);
 }
 else if (rainbows === 'no' || rainbows === 'n')
     alert('Sorry ' + username + ' Carmen does like rainbows');
@@ -24,6 +26,8 @@ if (haircolor === 'yes' || haircolor === 'y'){
     alert(username + ', my haircolor is not blue today.');
 } else if (haircolor === 'no' || haircolor === 'n')
     alert(username + ', you are right. My haircolor is not blue');
+score = score + 1;
+console.log('user score to question 2 was:' + score);
 
 
 // //Questions 3: prompt('Do I like to travel?') = true
@@ -32,6 +36,8 @@ const travel = prompt(username + ', here goes another question. Do I like to tra
 console.log('user said response to travels was:' + travel);
 if (travel === 'yes' || travel === 'y'){
     alert('You are right. I enjoy traveling.');
+    score = score + 1;
+    console.log('user score to question 3 was:' + score); 
 } else if (travel === 'no' || travel === 'n')
     alert('Who does not like to travel.');
 
@@ -39,7 +45,9 @@ if (travel === 'yes' || travel === 'y'){
 const children = prompt(username + ', do you think I have children?').toLowerCase();
 console.log('user said response to children was:' + children);
 if (children === 'yes' || children === 'y'){
-    alert('Yes. I have two beautiful supergirls/princesses. It depends on the day you ask.');
+    alert('Yes. I have two beautiful supergirls/princesses.');
+    score = score + 1;
+    console.log('user score to question 4 was:' + score);
 } else if (children === 'no' || children === 'n')
     alert('Actually, I do have two amazing little supergirls/princesses.');
 
@@ -49,9 +57,10 @@ console.log('user response to unicorn question was:' + unicorn);
 if (unicorn === 'yes' || unicorn === 'y'){
     alert('Oh ' + username + ', of course I am not a unicorn.');
 } else if ('Nope. Not a unicorn today.');
+score = score + 1;
+console.log('user score to question 6 was:' + score);
 
 //Question 6: of How many siblings do I have? will require prompt, for loop and alert
-
 let siblings;
 
 //let siblings = prompt (username + ', how many sibling(s) do I have?');
@@ -67,8 +76,9 @@ for ( let i = 0; i < 4; i++){
             }
                
         } else if (siblings === 1) {
-            alert ('Your right. Great job in guessing' + username);
+            alert (username + ', you are correct. I only have one sibling.');
             score = score + 1;
+            console.log('score up to question 6 was:' + score);
             i = 4;
         }
         else if (siblings > 1){
@@ -81,21 +91,21 @@ for ( let i = 0; i < 4; i++){
 }
 
 // //Question 7: Can you guess a state I have visited
-var visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland','Kansas']  
-var states;
+const visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland','Kansas'].toLowerCase;  
+let state;
 
-for (let i=0; i<6; i++){
-    states = prompt(username + ', can you guess what states I have visited?' );
-  
-  for (let x = 0; x < visitedstates.length; x++){
-    if (states===visitedstates[x]){
-      alert('Good guess!');
-     x = visistedstates.length + 1;
+for (let i = 0; i < 6; i++){
+    state = prompt(username + ', can you guess what states I have visited?' ).toLowerCase();
+    console.log('what mentioned was:' + visitedstates);
+    for (let x = 0; x < visitedstates.length; x++){
+        if (state === visitedstates[x]){
+            alert('Good guess!');
+            x = visitedstates.length + 1;
+        }
     }
-  }
 }
 
 
 console.log('keeping score' + score);
 
-alert(username + ', Thank you for playing! Have a nice day.');
+alert(username + ', Thank you for playing! You scored ' + score + '. But the score does not matter, what matters is that you learned more about me.');
