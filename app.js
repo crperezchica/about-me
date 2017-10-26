@@ -91,16 +91,20 @@ for ( let i = 0; i < 4; i++){
 }
 
 // //Question 7: Can you guess a state I have visited
-const visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland','Kansas'].toLowerCase;  
+const visitedstates = ['Washington', 'California', 'Florida', 'Ohio', 'North Carolina', 'New Jersey', 'Idaho', 'Utah', 'Maryland', 'Kansas'];
 let state;
 
 for (let i = 0; i < 6; i++){
     state = prompt(username + ', can you guess what states I have visited?' ).toLowerCase();
     console.log('what mentioned was:' + visitedstates);
     for (let x = 0; x < visitedstates.length; x++){
-        if (state === visitedstates[x]){
-            alert('Good guess!');
+        if (state.toLowerCase() === visitedstates[x].toLowerCase()){
+            alert('Good guess!  I have visited ' + visitedstates[x]);
             x = visitedstates.length + 1;
+        }
+        else if(x == visitedstates.length - 1)
+        {
+            alert('I have not visited ' + state + ' try again');
         }
     }
 }
