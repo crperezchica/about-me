@@ -4,7 +4,7 @@ let score = 0;
 
 alert('Welcome! Get ready to answer seven question to learn more about me.');
 
- 
+
 
 const username = prompt('But first what\s your name?');
 console.log('user said their name was:' + username);
@@ -22,7 +22,7 @@ function runRainbow() {
     if (rainbows === 'yes' || rainbows === 'y' ){
         alert('Nicely done! I do like rainbows.');
         score = score + 1;
-    console.log('user score to question 1 was:' + score);
+        console.log('user score to question 1 was:' + score);
     }
     else if (rainbows === 'no' || rainbows === 'n')
         alert('Sorry ' + username + ' Carmen does like rainbows');
@@ -51,7 +51,7 @@ function runTravel() {
     if (travel === 'yes' || travel === 'y'){
         alert('You are right. I enjoy traveling.');
         score = score + 1;
-        console.log('user score to question 3 was:' + score); 
+        console.log('user score to question 3 was:' + score);
     } else if (travel === 'no' || travel === 'n')
         alert('Who does not like to travel.');
 };
@@ -104,7 +104,7 @@ function runSiblings() {
                 if (i === 3){
                     alert('Thank you for trying. But, I only have one sibling.');
                 }
-                
+
             } else if (siblings === 1) {
                 alert (username + ', you are correct. I only have one sibling.');
                 score = score + 1;
@@ -119,7 +119,7 @@ function runSiblings() {
             }
         }
     }
-// };
+};
 
 // // //Question 7: Can you guess a state I have visited
 
@@ -127,7 +127,7 @@ runStates();
 
 function runStates() {
     for (let i = 0; i < 6; i++){
-        const visitedstates = ['washington', 'california', 'florida', 'ohio', 'north carolina'];        
+        const visitedstates = ['washington', 'california', 'florida', 'ohio', 'north carolina'];
         const state = prompt(username + ', can you guess what states I have visited?'  ).toLowerCase();
         console.log('what mentioned was:' + state);
         console.log(visitedstates.indexOf(state));
@@ -137,7 +137,7 @@ function runStates() {
             score = score + 1;
             break;
         }
-        else { 
+        else {
             alert('I have not visited ' + state + ' try again');
         }
     }
