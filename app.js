@@ -147,4 +147,4 @@ console.log('keeping score' + score);
 
 alert(username + ', Thank you for playing! You scored ' + score + '. But the score does not matter, what matters is that you learned more about me.');
 
-// 
+//
