@@ -134,7 +134,6 @@ function runStates() {
         console.log(visitedstates.indexOf(state));
         if (visitedstates.indexOf(state) >= 0){
             alert('Good guess!  I have visited ' + state);
-            // x = visitedstates.length + 1;
             score = score + 1;
             break;
         }
