@@ -35,7 +35,7 @@ function runHaircolor() {
     const haircolor = prompt('Is my haircolor blue?').toLowerCase();
     console.log('user said response to haircolor was:' + haircolor);
     if (haircolor === 'yes' || haircolor === 'y'){
-        alert(username + ', my haircolor is not blue today.');
+        alert(username + ', my haircolor is not blue. At least not now.');
     } else if (haircolor === 'no' || haircolor === 'n')
         alert(username + ', you are right. My haircolor is not blue');
     score = score + 1;
@@ -68,7 +68,7 @@ function runChildren() {
         score = score + 1;
         console.log('user score to question 4 was:' + score);
     } else if (children === 'no' || children === 'n')
-        alert('Actually, I do have two amazing little supergirls/princesses.');
+        alert('Actually, I have two amazing little supergirls/princesses.');
 };
 
 // // //Question 5: prompt('Am I a unicorn') = no need to answer
@@ -110,6 +110,7 @@ function runSiblings() {
                 score = score + 1;
                 console.log('score up to question 6 was:' + score);
                 i = 4;
+                alert('Great guess! I have one brother.');
             }
             else if (siblings > 1){
                 siblings = prompt('Sorry, too high. Try again.');
@@ -133,7 +134,6 @@ function runStates() {
         console.log(visitedstates.indexOf(state));
         if (visitedstates.indexOf(state) >= 0){
             alert('Good guess!  I have visited ' + state);
-            // x = visitedstates.length + 1;
             score = score + 1;
             break;
         }
@@ -145,6 +145,6 @@ function runStates() {
 
 console.log('keeping score' + score);
 
-alert(username + ', Thank you for playing! You scored ' + score + '. But the score does not matter, what matters is that you learned more about me.');
+alert(username + ', Thank you for playing! You scored ' + score + ' points. But the score does not matter. What matters is that you learned more about me.');
 
 //
