@@ -2,14 +2,75 @@
         body {
             font-family: sans-serif;
             background-color: ivory;
-
+            margin: 1%;
+        }
+        
+        #content {
+           /* overflow: auto; 
+           */
         }
         
         #intro {
             color: black;
             font-family: Arial, Helvetica, sans-serif;
-            font-size 25px;
+            font-size: 25px;
         }
+        #about me{
+           height: 10em;
+           margin: 1%;
+           width: 940px;
+           border-style: solid;
+           position: fixed;
+          
+           
+           background-color: rgb(43, 12, 43);
+           
+        }
+        #wrap {
+            /*column-count: 4;*/
+           /* position: relative;
+            overflow: hidden;
+            margin: auto;*/
+            display: flex;
+           justify-content: center;
+            
+            
+           /* column-gap: 10px;
+            column-rule: 1px solid blue;
+            column-width: 200px; */
+            
+        }
+        
+        .aboutmecontent {
+            width: 23%;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 5px 5px;            
+            /*float: left;
+            position: relative;*/
+            
+            
+        }
+
+       #my job experience{
+           width: 31.3%;
+           float: right;
+           position: relative;
+
+       }
+
+       #my goals{
+           width: 31.3%;
+           float: right;
+           position: relative;
+
+       }
+
+       #my top ten{
+           width: 31.3%;
+           float: right;
+           position: relative;
+       }
         h2 {
             font-family: sans-serif;
             color:blueviolet;
