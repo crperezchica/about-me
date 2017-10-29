@@ -33,11 +33,7 @@
             margin: auto;*/
             display: flex;
            justify-content: center;
-            
-            
-           /* column-gap: 10px;
-            column-rule: 1px solid blue;
-            column-width: 200px; */
+
             
         }
         
@@ -51,26 +47,6 @@
             
             
         }
-
-       #my job experience{
-           width: 31.3%;
-           float: right;
-           position: relative;
-
-       }
-
-       #my goals{
-           width: 31.3%;
-           float: right;
-           position: relative;
-
-       }
-
-       #my top ten{
-           width: 31.3%;
-           float: right;
-           position: relative;
-       }
         h2 {
             font-family: sans-serif;
             color:blueviolet;
