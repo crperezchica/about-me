@@ -5,52 +5,38 @@
             margin: 0%;
         }
         
-        
         #intro {
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
+            color: purple;
             font-size: 25px;
             text-align: center;
-          
         }
+
         #imagecloud {
             width: 100%;
             background-color: white;
             text-align: center;
             vertical-align: middle;
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            
-           
+            border: 1px solid lightgray;
         }
+
         #cloud{
             background-color: white;
             margin: 1px;
         }
 
         #wrap {
-            /*column-count: 4;*/
-           /* position: relative;
-            overflow: hidden;
-            margin: auto;*/
             display: flex;
-           justify-content: center;
-
-            
+           justify-content: center;           
         }
-        
+
         .aboutmecontent {
             width: 23%;
-            border: 1px solid black;
-            margin: 2px;
-            padding: 5px 5px;            
-            /*float: left;
-            position: relative;*/
-            
-            
+            border: 1px solid lightslategray;
+            margin: 10px;
+            padding: 5px 5px;          
         }
+
         h2 {
-            font-family: sans-serif;
-            color:blueviolet;
+            color:purple;
             }
 
