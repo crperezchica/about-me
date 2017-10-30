@@ -4,16 +4,21 @@
     <title>About Me</title>
     <link href="style.css" rel="stylesheet">
 </header>
-
+<body>
 <section id="intro">
- <body>
+    <div id="imagecloud"> 
+        <img id="cloud" src="images/wordcloud2.png" alt="wordcloud" width:"100" height="200"/> 
+    </div>
      <! -- start of about me overview -->
-     <h1>About Me</h1>
-     <p>The information below will provide you with an global overview of Carmen's diverse education and experience. </p>
-     <! -- end of about me overview -->
-    <! -- start of my education, job experience and goals -->
+     <div id="aboutme">
+        <h1>About Me</h1>
+        <p>The information below will provide you with an global overview of Carmen's diverse education, experience, and interest. </p>
+        <! -- end of about me overview -->
+       <! -- start of my education, job experience and goals -->
+     </div> 
  </section>
-<section>
+<section id="wrap">
+    <div class="aboutmecontent">
      <h2>My Education</h2>
         <ul>
             <li>A southern oregon highschool graduate</li>
@@ -21,8 +26,8 @@
             <li>Who received a BS in community health education and business administration</li>
             <li>Whose business administration concentration was in marketing and advertising</li>
         </ul>
-</section>
-<section>
+    </div>
+    <div class="aboutmecontent">
      <h2>My Job Experience</h2>
         <ul>
             <li>Has worked in both public and private sector</li>
@@ -30,17 +35,20 @@
             <li>Diverse experience in the following areas: Human Resources, Health Care Services, Operations, Sales, Marketing and Digital</li>
             <li>Most recent experiences was developing consumer engagement digital strategies for three healthcare brands</li>
         </ul>
-</section>
-<section>
+    </div>
+
+    <div class="aboutmecontent">
      <h2>My Goals</h2>
         <ul>
             <li>To become a developer</li>
             <li>Someday once I know what I am doing, teach</li>
         </ul>
-</section>
+    </div>
+
     <! -- end of my education, experience and goals -->
-<section>
-    <h2>Top Ten Countries I Would To Visit</h2>
+
+    <div class="aboutmecontent">
+    <h2>My Top 10 Country Bucket List</h2>
         <ol>
             <li>Brazil</li>
             <li>Peru</li>
@@ -53,13 +61,9 @@
             <li>China</li>
             <li>Australia</li>
         </ol>
-</section>
-    <script src="app.js">
-    </script>
-
-
-
-
- </body>
+    </div>
+</section
+<script src="app.js"> </script>
+</body>
 
 </html>

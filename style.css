@@ -1,17 +1,42 @@
 
         body {
             font-family: sans-serif;
-            background-color: rgba(154, 188, 204, 0.96);
-            box-shadow: inset 0px 1px 1px 0px black;
-            text-shadow: 0px 0px 0px black;
+            background-color: ivory;
+            margin: 0%;
         }
-            
-        h1, h2 {
-            font-family: sans-serif;
-            color:blueviolet;
+        
+        #intro {
+            color: purple;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #imagecloud {
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid lightgray;
+        }
+
+        #cloud{
+            background-color: white;
+            margin: 1px;
+        }
+
+        #wrap {
+            display: flex;
+           justify-content: center;           
+        }
+
+        .aboutmecontent {
+            width: 23%;
+            border: 1px solid lightslategray;
+            margin: 10px;
+            padding: 5px 5px;          
+        }
+
+        h2 {
+            color:purple;
             }
 
-            #intro {
-                color: rgb(47, 0, 255);
-                font-size: 25px;
-            }
